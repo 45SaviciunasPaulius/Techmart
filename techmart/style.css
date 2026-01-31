@@ -1,0 +1,877 @@
+#logo {
+    font-size: 40px;
+    letter-spacing: 4px;
+    color: white;
+    text-decoration: none;
+    width: 150px;
+    position: relative;
+    left: 1vw;
+    bottom: -15px;
+    z-index: 1;
+}
+
+body {
+    z-index: 0;
+    background-color: #1c1c2d;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+}
+
+#meniu {
+    z-index: 10;
+    height: 80px;
+    background-color: #2C2F33;
+}
+
+#search-bar {
+    padding-left: 50px;
+    min-width: 100px;
+    max-width: 500px;
+    font-size: 1vw;
+    margin-right: 10px;
+    position: absolute;
+    border: solid 3px;
+    left: 290px;
+    top: 15px;
+    width: 300vw;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+}
+
+#src-icon {
+    position: relative;
+    left: 540px;
+    bottom: -21px;
+    width: 40px;
+}
+
+#src-icon:hover{
+    filter: invert();
+    transform: scale(1.1);
+}
+#meniu-buttons {
+    max-width: 1000px;
+    top: 15px;
+    right: 20px;
+    margin-right: 0;
+    position: absolute;
+}
+
+#meniu-buttons>button{
+    position: relative;
+    top: 12px;
+    cursor: pointer;
+    margin-left: 25px;
+    padding-bottom: 5px;
+    width: auto;
+    border: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: normal;
+    border-bottom: solid white 2px;
+    color: white;
+    background-color: #00fafa00;
+} 
+
+
+#meniu-buttons>button:hover {
+    color: cyan;
+    border-bottom-color: cyan;
+    transform: scale(1.1);
+}
+
+#main-box {
+    width: 100%;
+    padding-top: 100px;
+    position: relative;
+    z-index: 0;
+    height: fit-content;
+    min-height: 1350px;
+    padding-bottom: 250px;
+    background-color: white;
+}
+
+#titulinis {
+    border-left: solid black 1px;
+    padding-left: 10px;
+    position: relative;
+    bottom: 35px;
+    margin-inline: 120px;
+    z-index: 3;
+    font-weight: normal;
+    font-size: 18px;
+}
+
+#footer {
+    left: 0;
+    position: absolute;
+    bottom: 0px;
+    height: 200px;
+    width:100%;
+    background-color: #2C2F33;
+    text-align: center;
+    color: white;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-text {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.footer-links {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: white;
+    margin: 0 15px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-social a {
+    color: white;
+    margin: 0 10px;
+}
+
+.footer-social a:hover {
+    text-decoration: underline;
+}
+
+.footer-copyright {
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+
+#ad-1,
+#ad-2 {
+    color: black;
+    background-color: rgb(165, 165, 165);
+    font-size: 12px;
+    padding: 300px 0;
+    position: absolute;
+    width: 120px;
+    text-align: center;
+}
+
+#ad-1 {
+    left: 0;
+    top: 300px;
+}
+
+#ad-2 {
+    top: 300px;
+    right: 0;
+}
+
+#new p:nth-child(1), #popular p:nth-child(1){
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+
+#new,
+#popular,
+#kategoriju-menu {
+    overflow-y: hidden;
+    white-space: nowrap;
+    overflow-x: scroll;
+    z-index: 4;
+    font-size: 16px;
+    text-align: center;
+    background-color: #c5bdbd2c;
+    margin-top: 50px;
+    margin-inline: 120px;
+    height: 280px;
+}
+
+.kategoriju-button {
+    display: inline-block;
+    padding: 0;
+    margin: 15px;
+    z-index: 1;
+    pointer-events: auto;
+    width: 200px;
+    height: 200px;
+    background-color: rgba(128, 128, 128, 0.329);
+    color: black;
+    border-radius: 15px;
+    text-decoration: none;
+}
+
+.kategoriju-button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    filter: brightness(1.2);
+}
+
+/* REGISTRACIJU-PRISIJUNGIMO FORMU */
+
+.pavadinimas {
+    color: white;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 40px;
+}
+
+.paskyros {
+    color: white;
+    text-align: center;
+}
+
+.paskyros>button {
+    border: none;
+    color: white;
+    background-color: #00fafa00;
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 16px;
+}
+
+.paskyros>button:hover,
+.submit:hover,
+.forma>div>a:hover {
+    filter: brightness(70%);
+}
+
+.forma {
+    color: white;
+    text-align: center;
+    margin-top: 40px;
+    position: relative;
+}
+
+.forma>div>a {
+    cursor: pointer;
+    color: white;
+    display: inline-block;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding-top: 15px;
+    background-color: rgb(118, 133, 145);
+    text-decoration: none;
+    width: 175px;
+    height: 35px;
+    margin-bottom: 20px;
+}
+
+#Selected-method {
+    border: solid rgb(93, 231, 231) 3px;
+    background-color: white;
+    color: black;
+}
+
+.forma>input {
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: none;
+    width: 350px;
+    height: 40px;
+}
+
+.submit {
+    margin-top: 20px;
+    font-size: 20px;
+    border: solid 2px rgba(255, 255, 255, 0.362);
+    background-color: white;
+    width: 350px;
+    height: 50px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.junk {
+    box-shadow: 10px 10px 5px black;
+    background-color: #2C2F33;
+    width: 500px;
+    height: 600px;
+    position: absolute;
+    margin: auto;
+    top:10px;
+    left: 0;
+    right: 0;
+}
+
+/* ------------------------------------------------------------ */
+
+#logout-button{
+    position: relative;
+    top: 15px;
+    padding: 15px;
+    color: white;
+    font-size: 16px;
+}
+
+#logout-button>a{
+    color: #27fbf7;
+}
+
+/* PROFILE ICON  Stilius */
+
+#Profile-menu>a{
+    border-bottom: solid white 2px;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    display: block;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 15px;
+    font-weight: normal;
+}
+
+#Profile-menu>a:hover{
+    border-color: #27fbf7;
+    transform: scale(1.1);
+    color: #27fbf7;
+}
+#Profile-menu>a:hover:nth-child(3){
+    transform: scale(1.1);
+    color: red;
+    border-color: red;
+}
+#Profile-menu{
+    box-shadow: 5px 5px black;
+    top: 70px;
+    display: none;
+    position: absolute;
+    right: 25px;
+    z-index: 5;
+    background-color: #45494e;
+    padding-inline: 10px;
+    width: fit-content;
+    height: 100px;
+}
+
+#Profile-menu::after {
+    content: '';
+    position: absolute;
+    top: -10px; 
+    right: 10px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 10px 10px 10px;
+    border-color: transparent transparent #45494e transparent;
+  }
+
+#Profile-icon{
+   cursor: pointer;
+   width: 50px;
+   float: right;
+   margin-inline: 20px;
+   filter: invert();
+
+}   
+
+#Profile-icon:hover{
+    transform: scale(1.1);
+}
+
+#Add-listing{
+    background-color: #2C2F33;
+    width: fit-content;
+    color: white;
+    padding: 15px;
+    display: block;
+    text-decoration: none;
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: 10px auto;
+    
+}
+
+#Add-listing:hover{
+    transform: scale(1.1);
+    color: cyan;
+}
+
+/* KURIMO FORMOS STILIZAVIMAS */
+/* General form styling */
+#Main-Kurimo-forma {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+#Main-Kurimo-forma input,
+#Main-Kurimo-forma select,
+#Main-Kurimo-forma textarea,
+#Main-Kurimo-forma button {
+    width: 99%;
+    height: 50px;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+#Main-Kurimo-forma select {
+    background-color: #fff;
+    cursor: pointer;
+}
+
+#Main-Kurimo-forma textarea {
+    resize: none;
+    min-height: 200px;
+}
+
+#Main-Kurimo-forma button {
+    background-color: #45494e;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#Main-Kurimo-forma button:hover {
+    background-color: #6c7681;
+}
+
+#Main-Kurimo-forma div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 15%;
+    
+}
+.kontaktai{
+    width: 50% !important;
+    margin-right: 10px;
+}
+
+.kontaktai~.kontaktai{
+    position: absolute; 
+    width: 380px!important;
+}
+
+/* ------------------------------- */
+
+
+/* PREKIU DIZAINAS */
+
+#items{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-inline: 100px;
+   
+}
+
+.item {
+    position: relative;
+    display: inline-block;
+    width: 680px;
+    height: 100px;
+    margin: 10px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+}
+
+.item:hover{
+    filter: brightness(95%);
+}
+
+.item a {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%; 
+    min-width: 700px; 
+    height: 100%; 
+}
+
+
+.item img {
+    overflow: hidden;
+    max-width: 200px;
+    margin-right: 15px;
+    border-radius: 5px;
+}
+.item h2 {
+    font-size: 44px;
+    margin: 0 0 5px;
+    color: #333;
+}
+.item .price {
+    color: rgb(2, 148, 2);
+    font-size: 1em;
+    font-weight: bold;
+}
+.item a {
+    width: 80%;
+    font-size: 20px;
+    text-decoration: none;
+    color: #6c7681;
+}
+
+.info{
+    position: absolute;
+    top: 10px;
+    left: 220px;
+}
+
+/* SKelbimu puslapio info */
+
+
+#skelbimas-main {
+    overflow: hidden;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+#Skelbimo-pav{
+    overflow-wrap: anywhere;
+    width: 650px;
+    height: fit-content;
+}
+
+#Skelbimo-kaina{
+    position: relative;
+    top: -60px;
+    left: 700px;
+    color: green;
+    font-size: 25px;
+}
+
+#Skelbimo-miest{
+    position: relative;
+    top: -60px;
+    font-size: 20px;
+    color: gray;
+    font-style: italic;
+}
+
+#Skelbimo-apra p{
+ font-size: 20px;
+font-weight: normal;
+}
+
+#Skelbimo-kont{
+   margin: auto;
+   width: fit-content;
+   font-size: 20px;
+}
+
+#Skelbimo-ft{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    
+    margin: 20px auto;
+}
+
+#pagr-ft{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-height: 700px;
+    width: 700px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+
+
+#LeftArrow{
+    width: 50px;
+    position: absolute;
+    left: -20px;
+    top: 100px;
+    height: fit-content;
+}
+
+#RightArrow{
+    width: 50px;
+    position: absolute;
+    right: -20px;
+    top: 100px;
+    height: fit-content;
+}
+
+#LeftArrow:hover,#RightArrow:hover{
+   transform: scale(1.1);
+   cursor: pointer;
+}
+
+.ads-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+.ad {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.ad h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.ad p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.ad a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.ad a:hover {
+    text-decoration: underline;
+}
+
+
+.message-success {
+    color: green;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.message-error {
+    color: red;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+#search-bar {
+    padding: 5px;
+    margin-right: 10px;
+}
+
+/* Hover effect for the ad item */
+/* Container for the ad */
+/* Container for the ad */
+/* Container for the ad */
+/* Container for the ad */
+.ad-title {
+    max-width: 250px;
+    position: relative;
+    z-index: 1; /* Set a lower z-index to ensure it stays below the buttons */
+}
+/* Styling for the ad link (image + text) */
+.ad-link {
+    display: flex;
+    text-decoration: none;
+    width: 100%;
+}
+
+/* Image styling */
+.item img {
+    width: 150px; /* Fixed width for image */
+    height: 100px; /* Fixed height for image */
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Ad information block (title, city, price) */
+.info {
+    margin-left: 20px; /* Adds space between image and text */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers the text vertically */
+    flex-grow: 1; /* Ensures the text block takes remaining space */
+}
+
+/* Title styling */
+.info h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 0 10px;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+/* City and price styling */
+.info p {
+    font-size: 14px;
+    color: #555;
+    margin: 5px 0;
+}
+
+/* Styling for price */
+.info .price {
+    font-size: 16px;
+    color: #f39c12;
+    font-weight: bold;
+}
+
+.button-container {
+    position: absolute;
+    top:17px;
+    left: 290px;
+    z-index: 10;
+    gap: 5px;
+}
+/* Button styles */
+.edit-button,
+.delete-button {
+    color: white;
+    font-size: 14px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.delete-button{
+    position: relative;
+    top: 40px !important;
+}
+
+/* Hover effect for buttons */
+.edit-button:hover,
+.delete-button:hover {
+    opacity: 0.8;
+    transform: translateY(-2px);
+}
+
+/* Add hover effect for the ad text */
+.item:hover .info h2 {
+    color: #00fafa; /* Change color on hover */
+}
+
+/* Nauju skelbimu skiltis */
+
+.item-new a{
+ height: 100%;
+
+}
+
+.item-new{
+    position: relative;
+    top: 35px;
+    display: inline-block;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-left: 30px;
+    width: fit-content;
+    height: 190px;
+    padding: 5px;
+}
+
+.item-new:hover{
+    transform: scale(1.05);
+}
+.item-new *{
+    position: absolute;
+}
+.item-new{
+width: 600px;
+}
+
+.item-new img{
+    padding-left: 5px;
+    left: 0;
+    max-height: 190px;
+    max-width: 300px;
+    border-radius: 10px;
+}
+.item-new a{
+    left: 0;
+    width: 600px;
+    height: 200px;
+}
+
+.item-new h2{
+    white-space: normal;
+    width: 300px;
+    font-size: 20px;
+    color: black;
+    margin-left: 10px;
+    left: 300px;
+}
+
+.miestas-new{
+    font-weight: normal;
+    font-size: 20px;
+    color: black;
+    top: 50px;
+    left: 400px;
+}
+.price-new{
+    font-size: 20px;
+    color: green;
+    top: 80px;
+    left: 400px;
+}
+
+.pages{
+    width: fit-content;
+    margin: auto;
+}
+
+.pages a{
+    text-decoration: none;
+    display: inline-block;
+    background-color: #cfcfcfab;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-left: 2px;
+    width: fit-content;
+    padding: 10px;
+    color: black;
+}
+
+.pages a:hover{
+    transform: scale(1.1);
+    filter: contrast(50%);
+}
+
+.exs-fts{
+    margin-right: 100px;
+}
+
+.remove-ft{
+    position: relative;
+    left: -20px;
+    top: -45px;
+    color: red;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 25px;
+}
